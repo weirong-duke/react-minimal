@@ -13,14 +13,14 @@ module.exports = {
             {
                 test: /\.jsx?$/,
                 exclude: /node_modules/,
-                loader: 'react-hot-loader!babel-loader'
+                loaders: ['react-hot-loader', 'babel-loader']
             },
             {
-                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+                test: /\.(ttf|eot|woff(2)?)?$/,
                 loader: 'file-loader'
             },
             {
-                test: /\.(png|jpg|gif)$/,
+                test: /\.(png|jpg|gif|svg)$/,
                 loader: 'url-loader'
             }
         ]
