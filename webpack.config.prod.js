@@ -41,14 +41,14 @@ module.exports = {
             }
         }),
         new webpack.optimize.AggressiveMergingPlugin(),
-        new analyzer()
+        // new analyzer()
     ],
     resolve: {
         extensions: ['*', '.js', '.jsx', '.scss']
     },
     output: {
         path: __dirname + '/www',
-        publicPath: __dirname + '/www/',
+        publicPath: '/',
         filename: 'bundle.js'
     }
 };

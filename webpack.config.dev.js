@@ -36,18 +36,7 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        proxy: {
-            '/precheck': {
-                target: {
-                    host: "d1-prechk01.ops.medfusion.net",
-                    protocol: 'http:',
-                    port: 8081
-                },
-                pathRewrite: {
-                    '^/precheck': ''
-                }
-            }
-        },
+
         hot: true,
         contentBase: './www',
         historyApiFallback: true
