@@ -5,6 +5,8 @@
 	"main": "index.js",
 	"scripts": {
 		"start": "webpack-dev-server --progress --colors --hot --config ./webpack.config.js",
+		"build": "webpack --progress --config ./webpack.config.prod.js",
+		"analyze": "webpack --progress --config ./webpack.config.analyze.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"author": "William Chen",
@@ -44,7 +46,7 @@
 		"style-loader": "^0.16.0",
 		"url-loader": "^0.5.8",
 		"webpack": "^2.3.2",
-		"webpack-bundle-analyzer": "^2.2",
+		"webpack-bundle-analyzer": "^2.8.2",
 		"webpack-dev-server": "^2.4.2"
 	}
 }
